@@ -1,0 +1,431 @@
+/*Fuentes*/
+
+@font-face {
+    font-family: "Nevis"; 
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("fonts/nevis.woof") format("woof"),
+        url("fonts/nevis.ttf") format("truetype"),
+        url("fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fajala"; 
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Icons"; 
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+        url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/websymbols-regular-webfont.woff") format("woff"),
+         url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+        
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Estilos generales*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../img/paven.png");
+}
+
+a {
+    color: #529125;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #285616;
+}
+
+
+a:visited {
+    color: #529125;
+}
+
+.red {
+    color: #9b2422 !important;
+}
+
+.blue {
+    color: #0c73f2 !important;
+}
+
+.orange {
+    color: #d69d2a !important;
+}
+
+.icon {
+    font-family: Icons;
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+/*CABECERA*/
+
+header {
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header #logo {
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+header #logo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #70B231; 
+    text-transform: uppercase;
+    font-family: Nevis;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+}
+
+header h1:hover {
+    text-shadow: 0px 2px 1px #333333, 0px 0px 7px #70B231;
+}
+
+header h1 a {
+    color: #70B231;
+}
+
+/*BARRA DE NAVEGACION*/
+
+#nav {
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#nav ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1090px;
+}
+
+#nav > ul > li {
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+    transition: all 300ms;
+}
+
+#nav > ul > li a{
+    display: block;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+#nav >ul >li >a:first-child {
+    border-left: 1px solid gray;
+}
+
+#nav >ul >li:hover {
+    background-color: #70B231;
+    box-shadow: 0px 0px 4px green inset;
+}
+
+/*Menu desplegable*/
+
+#nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+#nav > ul >li:hover > ul {
+    display: block;
+}
+
+#nav > ul >li:hover > ul > li {
+    background-color: #F2F1F0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: all 300ms;
+}
+
+
+#nav > ul >li:hover > ul > li a {
+    color: #666666;
+
+}
+
+#nav > ul >li:hover > ul > li:hover {
+    box-shadow: 0px 0px 2px #cccccc inset;
+    background-color: #cccccc;
+}
+
+
+/*Contenido*/
+
+#contenido {
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+/*Formularios*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #cccccc inset;
+    background-color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border: 1px solid #70b231;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    display: block;
+    border-radius: 2px;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+    border: 1px solid green;
+    cursor: pointer;
+    color: white;
+}
+
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    box-shadow: 0px 0px 4px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active {
+    box-shadow: 0px 0px 6px gray inset;
+    text-shadow: 0px 0px 1px #cccccc;
+}
+
+/*Barra lateral*/
+
+#barra, #frase{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 6px 6px #cccccc;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#frase {
+    
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+    width: 180px;
+}
+
+
+#barra .elementos {
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#barra .elementos:last-child {
+    margin-bottom: 40px;
+}
+
+#barra h3 {
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    background-color: #f2f3f2;
+    border:1px solid #cccccc;
+    border-left: none;
+    border-right: none;
+}
+
+
+#barra li {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+/*Formularios barra lateral*/
+
+#barra div label,
+#barra div input[type="text"],
+#barra div input[type="email"],
+#barra div input[type="password"],
+#barra div a {
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+#barra div input[type="button"],
+#barra div input[type="submit"],
+#barra div button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#barra input,
+#barra label {
+    margin: 0px auto;
+    text-align: center;
+}
+
+/*Secciones*/
+
+#secciones {
+    float: right;
+    width: 75%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
+
+}
+
+#secciones .titulo {
+    font-size: 24px;
+    font-family: "Fajala";
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+    margin-top: -20px;
+}
+
+#secciones section {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#secciones .articulos {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#secciones .fecha {
+    color: gray;
+    font-size: 14px;
+}
+
+/*Pegatinas*/
+#secciones .sticker_1,
+#secciones .sticker_2  {
+    position: absolute;
+    margin-top: -40px;
+    z-index: 0;
+}
+
+#secciones .sticker_2  {
+    margin-left: 63.5%;
+}
+
+
+/*Pie de pagina*/
+ 
+
+#historial {
+    float: right;
+    margin-top: 20px;
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+
+#pie {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}

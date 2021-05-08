@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo CSS</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+</head>
+
+<body>
+
+    <!--Inicio de la cabecera-->
+
+    <header id="header">
+
+        <div id="logo">
+            <img src="img/logo.png" alt="Imagen del logotipo.">
+        </div>
+
+        <h1>
+            <a href="index.html">
+                Master en CSS
+            </a>
+        </h1>
+
+
+    </header>
+
+    <!--Fin de la cabecera-->
+
+    <!--Incio del menu desplegable-->
+
+    <nav id="nav">
+
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="index.html">Contenido</a>
+            </li>
+            <li>
+                <a href="index.html">Requerimientos</a>
+            </li>
+            <li>
+                <a href="index.html">Lenguajes</a>
+                <ul>
+                    <li>
+                        <a href="index.html">HTML</a>
+                    </li>
+                    <li>
+                        <a href="index.html">CSS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">FrameWorks</a>
+
+                <ul>
+                    <li>
+                        <a href="index.html">SASS</a>
+                    </li>
+                    <li>
+                        <a href="index.html">LESS</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Bootstrap 4</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">Proyectos</a>
+            </li>
+            <li>
+                <a href="index.html">Instructor</a>
+            </li>
+            <li>
+                <a href="index.html">Reseñas</a>
+            </li>
+            <li>
+                <a href="index.html">Blog</a>
+            </li>
+            <li>
+                <a href="index.html">Contacto</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Fin del menu desplegable-->
+
+    <!--Inicio del contenido central-->
+
+    <div id="contenido">
+
+        <!--Inicio de la barra lateral-->
+
+        <aside id="barra">
+
+            <div class="elementos" id="loggin">
+
+                <h3>Entrar a la web</h3>
+
+                <form>
+
+                    <label for="text_usuario">Usuario:</label>
+                    <input type="text" name="text_usuario" id="text_usuario" />
+                    <label for="text_password">Contraseña:</label>
+                    <input type="password" / name="text_password" id="text_usuario">
+
+                    <input type="submit" value="Entrar" />
+
+                </form>
+
+                <a href="#">Zona de alumnos</a>
+                <a href="#">Zona de profesor</a>
+                <a href="#">Acceso a calificaciones</a>
+
+            </div>
+
+            <div class="elementos" id="aula_1">
+
+                <h3 class="blue">Aula virtual 1</h3>
+
+                <form>
+
+                    <label>Nombre de usuario:</label>
+                    <input type="text" />
+                    <label>Contraseña:</label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+
+                </form>
+
+            </div>
+
+
+            <div class="elementos" id="aula_2">
+
+                <h3 class="red">Aula virtual 2</h3>
+
+                <form>
+
+                    <label>Nombre de usuario:</label>
+                    <input type="text" />
+                    <label>Contraseña:</label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+
+                </form>
+
+            </div>
+
+            <div class="elementos" id="enlaces">
+
+                <h3>Enlaces de interes</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">Master en CSS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Aulas</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Aprendiendo JavaScript</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Aprendere PHP</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Aprendere Node JS</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <!--Fin de la barra lateral-->
+
+        <!--Inicio de secciones-->
+
+        <div id="secciones">
+
+            <!--Seccion 1-->
+            
+            <section id="frontend">
+
+                <span class="stickers">
+                    <img class="sticker_1 "src="img/scotch.png" alt="pegatina"/>
+                    <img class="sticker_2" src="img/scotch.png" alt="pegatina"/>
+                </span>
+
+
+                <h2 class="titulo">Noticias de frontend</h2>
+                <article class="articulos">
+
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+            </section>
+
+            <!--Seccion 2-->
+            <section id="backend">
+
+                <span class="stickers">
+                    <img class="sticker_1 "src="img/scotch.png" alt="pegatina"/>
+                    <img class="sticker_2" src="img/scotch.png" alt="pegatina"/>
+                </span>
+
+
+                <h2 class="titulo red">Noticias de backend</h2>
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span id="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+            </section>
+
+
+            <!--Seccion 3-->
+
+            <section id="instructor">
+
+                <span class="stickers">
+                    <img class="sticker_1 "src="img/scotch.png" alt="pegatina"/>
+                    <img class="sticker_2" src="img/scotch.png" alt="pegatina"/>
+                </span>
+
+
+                <h2 class="titulo orange">Noticias del instructor</h2>
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+
+                        <a href="#">Titulo de la entrada</a>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+
+                    </p>
+
+                    <span class="fecha">[20-12-2020. Josue Pujols]</span>
+
+                </article>
+
+            </section>
+
+        </div>
+
+        <!--Fin de secciones-->
+
+        
+        <aside id="frase">
+            Josue Pujols es un programador de aplicaciones de escritorio que actualmente esta aprendiendo desarrollo
+            web.
+            <a href="#">Lerr mas frases</a>
+        </aside>    
+
+
+        <div class="clearfix"></div>
+    
+        <div id="historial">
+
+            <a href="#">[Ver historial de noticias]</a>
+
+        </div>
+
+    </div>
+
+    <!--Fin del contenido central-->
+
+    <!--Footer-->
+    <div class="clearfix"></div>
+    <footer id="pie">
+
+        <p>
+            &copy; Desarrollado por Josue Pujols.
+        </p>        
+
+        <p>
+            Mas contenido e informacion de desarrollo web <a href="#">josuepujols.com</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
